@@ -91,13 +91,6 @@ internal static class ZhHans
                 SetIfChanged(toggle.OnContent as string, value => toggle.OnContent = value);
                 SetIfChanged(toggle.OffContent as string, value => toggle.OffContent = value);
                 break;
-            case ContentControl control:
-                SetIfChanged(control.Content as string, value => control.Content = value);
-                break;
-            case InfoBar bar:
-                SetIfChanged(bar.Title, value => bar.Title = value);
-                SetIfChanged(bar.Message, value => bar.Message = value);
-                break;
             case Expander expander:
                 SetIfChanged(expander.Header as string, value => expander.Header = value);
                 break;
@@ -106,6 +99,13 @@ internal static class ZhHans
                 SetIfChanged(dialog.PrimaryButtonText, value => dialog.PrimaryButtonText = value);
                 SetIfChanged(dialog.SecondaryButtonText, value => dialog.SecondaryButtonText = value);
                 SetIfChanged(dialog.CloseButtonText, value => dialog.CloseButtonText = value);
+                break;
+            case InfoBar bar:
+                SetIfChanged(bar.Title, value => bar.Title = value);
+                SetIfChanged(bar.Message, value => bar.Message = value);
+                break;
+            case ContentControl control:
+                SetIfChanged(control.Content as string, value => control.Content = value);
                 break;
         }
         if (node is UIElement element)
