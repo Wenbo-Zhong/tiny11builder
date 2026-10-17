@@ -67,6 +67,7 @@ public sealed partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        ZhHans.Attach(this);
         ExtendsContentIntoTitleBar = true;
         SetTitleBar(TitleArea);
         AppWindow.Resize(new Windows.Graphics.SizeInt32(1200, 900));
@@ -840,7 +841,15 @@ public sealed partial class MainWindow : Window
     private void OnOptionFilterChanged(object sender, SelectionChangedEventArgs args) { if (initialized) FilterOptions(); }
     private void FilterOptions()
     {
-        var category = (OptionFilter.SelectedItem as ComboBoxItem)?.Content?.ToString() ?? "All";
+        // Index, not the visible label: zh-Hans.tsv replaces that label and must not change the filter key.
+        var category = OptionFilter.SelectedIndex switch
+        {
+            1 => "Bundled apps",
+            2 => "Optional features",
+            3 => "Windows settings",
+            4 => "Advanced / original builder",
+            _ => "All"
+        };
         OptionsList.ItemsSource = options.Where(o => category == "All" || o.Category == category).ToArray();
     }
     private void UpdateCounts()
@@ -900,7 +909,18 @@ public sealed partial class MainWindow : Window
     private void OnInventoryFilterSelection(object sender, SelectionChangedEventArgs args) { if (initialized) FilterInventory(); }
     private void FilterInventory()
     {
-        var filter = (InventoryFilter.SelectedItem as ComboBoxItem)?.Content?.ToString() ?? "All";
+        // Index, not the visible label: zh-Hans.tsv replaces that label and must not change the filter key.
+        var filter = InventoryFilter.SelectedIndex switch
+        {
+            1 => "ProvisionedApp",
+            2 => "SystemApp",
+            3 => "Feature",
+            4 => "Capability",
+            5 => "Package",
+            6 => "Service",
+            7 => "ComponentPayload",
+            _ => "All"
+        };
         var query = InventorySearch.Text.Trim();
         InventoryList.ItemsSource = inventory.Where(i => (filter == "All" || i.Item.Kind.ToString() == filter) &&
             (query.Length == 0 || i.Title.Contains(query, StringComparison.OrdinalIgnoreCase) ||

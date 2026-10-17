@@ -24,5 +24,6 @@
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.28000.2705" />
     <ProjectReference Include="..\Tiny11Builder.Core\Tiny11Builder.Core.csproj" />
     <Manifest Include="$(ApplicationManifest)" />
+    <EmbeddedResource Include="Localization\zh-Hans.tsv" />
   </ItemGroup>
 </Project>

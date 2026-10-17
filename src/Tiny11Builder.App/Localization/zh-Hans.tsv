@@ -1,0 +1,301 @@
+# Exact English UI text, tab, Simplified Chinese. Lines starting with # are comments.
+# Product names Tiny11 and Tiny11 Core stay in English. Unlisted text stays English.
+BUILD STEPS	构建步骤
+Welcome	欢迎
+Windows image	Windows 映像
+Remove components	移除组件
+Build settings	构建设置
+Review	核对
+Create image	生成映像
+SELECTED IMAGE	当前映像
+No image selected	尚未选择映像
+Source files are not modified.	不会修改源文件。
+Resume build	继续构建
+Continue a stopped build from the progress it saved.	从已保存的进度继续被中断的构建。
+Recover workspace	清理工作区
+Appearance	外观
+System	跟随系统
+Light	浅色
+Dark	深色
+Upstream project ↗	上游项目 ↗
+Back	返回
+Cancel safely	安全取消
+Create a customized Windows 11 ISO. Select an image, choose what to remove, and build the ISO.	制作定制的 Windows 11 ISO。选择映像、勾选要移除的内容，然后生成 ISO。
+Build modes	构建模式
+Select Tiny11 and choose a Windows ISO.	选择 Tiny11，并指定 Windows ISO。
+Use the original Tiny11 removals. Keep Windows Update and recovery.	使用 Tiny11 原版移除项，保留 Windows 更新和恢复环境。
+Update support retained	保留更新能力
+Select Tiny11 Core and choose a Windows ISO.	选择 Tiny11 Core，并指定 Windows ISO。
+Remove update and recovery support and disable Defender.	移除更新与恢复支持，并关闭 Defender。
+For test VMs only	仅用于测试虚拟机
+Select Custom and choose a Windows ISO.	选择自定义，并指定 Windows ISO。
+Custom	自定义
+Select individual apps, components and services to remove.	自行选择要移除的应用、组件和服务。
+Protected items included	包含受保护项
+Windows 11 22H2 or newer · x64 and ARM64 · Insider / Canary	Windows 11 22H2 或更新版本 · x64 与 ARM64 · Insider / Canary
+Test Core and custom images in a VM before use.	Core 和自定义映像请先在虚拟机中测试。
+Download the latest Windows 11 from Microsoft, or select an ISO or extracted installation folder. Inspect the image to select an edition.	从微软下载最新 Windows 11，或选择已有 ISO / 已解压的安装目录。检查映像后再选择版本。
+Local installation media	本地安装介质
+Windows ISO or installation-media folder	Windows ISO 或安装介质文件夹
+Choose a Windows 11 image	选择一个 Windows 11 映像
+Choose ISO	选择 ISO
+Choose folder	选择文件夹
+Inspect image	检查映像
+Edition to build	要构建的版本
+Download latest Windows 11	下载最新 Windows 11
+Official Microsoft ISO. Architecture and language selected automatically.	微软官方 ISO。架构和语言会自动选择。
+Or use an ISO you already have.	也可以使用你已经有的 ISO。
+Other official downloads	其他官方下载
+Choose a language on Microsoft's download page, then paste the ISO download link here. Links usually expire after 24 hours.	在微软下载页选择语言，再把 ISO 直链粘贴到这里。链接通常 24 小时后失效。
+Microsoft x64 downloads ↗	微软 x64 下载页 ↗
+Microsoft ARM64 downloads ↗	微软 ARM64 下载页 ↗
+Official Insider / Canary ISO selection ↗	官方 Insider / Canary ISO 选择页 ↗
+Microsoft direct ISO link	微软 ISO 直链
+Published SHA-256 (recommended)	公布的 SHA-256（建议填写）
+Copy from Microsoft's Verify your download section	从微软页面的 “Verify your download” 复制
+Download ISO / resume partial	下载 ISO / 继续未完成的下载
+Components	组件
+Choose Tiny11, Tiny11 Core, or select your own removals with Custom. Every change is recorded in the build log.	选择 Tiny11、Tiny11 Core，或用自定义自行勾选。每次更改都会写入构建日志。
+Original removals. Keep update support.	原版移除项。保留更新能力。
+Essentials only. For test VMs.	只留基本组件。仅供测试虚拟机。
+Choose individual removals.	自行选择移除项。
+Core removes update and recovery support.	Core 会移除更新和恢复支持。
+You will be asked to accept Core's limitations before continuing.	继续之前需要确认你接受 Core 的限制。
+Apply Core removals	应用 Core 移除项
+Keep servicing, recovery and Defender	保留维护、恢复和 Defender
+Remove servicing, recovery and Defender	移除维护、恢复和 Defender
+Checked groups are removed or disabled. Unchecked groups are kept. For individual items, use the component list below.	勾选的组会被移除或禁用，未勾选的会保留。单个项目请用下面的组件列表。
+Show choices	显示范围
+All	全部
+Bundled apps	捆绑应用
+Optional features	可选功能
+Windows settings	Windows 设置
+Advanced / original builder	高级 / 原版构建器
+Advanced removals	高级移除
+List the image's apps, packages, features, services and component files, including protected items. Removing a service deletes its registry entry, not shared executables. Protected packages may refuse removal.	列出映像中的应用、程序包、功能、服务和组件文件，包括受保护项。移除服务只删除其注册表项，不删除共用的可执行文件。受保护的程序包可能拒绝移除。
+List all components…	列出全部组件…
+Unsupported removals	不受支持的移除
+Removing protected or boot-critical items can create an unbootable or insecure image. Direct payload removal bypasses servicing. No dependency solver or boot guarantee is provided.	移除受保护或启动关键项可能导致映像无法启动或不安全。直接删除组件文件会绕过系统维护，没有依赖检查，也不保证能够启动。
+I accept the risk of an unbootable, unserviceable or insecure custom image.	我接受自定义映像可能无法启动、无法维护或不安全的风险。
+Search components	搜索组件
+Component type	组件类型
+ProvisionedApp	预装应用
+SystemApp	系统应用
+Feature	功能
+Capability	功能包
+Package	程序包
+Service	服务
+ComponentPayload	组件文件
+Individual removals add to the selected groups. To keep a component, leave both its group and its individual entry unchecked.	单个移除会叠加到已选的组上。要保留某个组件，组和单独条目都不要勾选。
+Clear custom selections	清除自定义选择
+Choose where to build and how to compress your image.	选择构建位置和映像压缩方式。
+Files and workspace	文件和工作区
+Workspace (NTFS, typically 40 to 70 GiB free)	工作区（NTFS，通常需要 40 到 70 GiB 可用空间）
+Choose workspace	选择工作区
+New output ISO file	新的输出 ISO 文件
+Choose output	选择输出位置
+Installation-image compression	安装映像压缩
+Recovery ESD (smaller, slower to compress)	恢复 ESD（更小，压缩更慢）
+Maximum WIM (easier to service later)	最大压缩 WIM（以后更容易维护）
+Fast WIM (fastest build, larger ISO)	快速 WIM（构建最快，ISO 更大）
+Turbo mode	加速模式
+Batch feature and capability removals and reduce log overhead. Core and Fast WIM builds use a faster working image. Uses more CPU and temporary space; final compression stays as selected.	批量移除功能和功能包，并减少日志开销。Core 和快速 WIM 会使用更快的工作映像。占用更多 CPU 和临时空间；最终压缩方式仍按上面的选择。
+Off	关
+On	开
+Remove redundant image data	移除多余映像数据
+Remove downloaded update caches, archived servicing logs, temporary files and crash reports. Pending servicing data, drivers and installers are kept.	移除已下载的更新缓存、归档的维护日志、临时文件和崩溃报告。保留未完成的维护数据、驱动和安装程序。
+Keep	保留
+Remove	移除
+Omit .NET 3.5 setup payload	不放入 .NET 3.5 安装源
+Leave sources\sxs out of the ISO. You can still include .NET 3.5 now; enabling it later requires separate matching media or Windows Update. Core cannot add it later.	ISO 中不包含 sources\sxs。现在仍可装入 .NET 3.5；以后再启用需要匹配的安装源或 Windows 更新。Core 以后无法再添加。
+Omit	省略
+Compact installation	紧凑安装
+Install Windows using compressed system files to reduce disk usage.	安装时压缩系统文件，减少磁盘占用。
+.NET Framework 3.5	.NET Framework 3.5
+Include support for older apps. Required source files must be present in the ISO.	为旧应用提供支持。ISO 中必须带有所需源文件。
+Local-account setup	本地账户安装
+Prefer local sign-in during setup. Some newer builds may still request a Microsoft account.	安装时优先使用本地登录。较新的版本仍可能要求微软账户。
+Keep working files	保留工作文件
+Retain the modified installation media after the ISO is saved. Uses more disk space.	ISO 保存后仍保留改过的安装介质。会占用更多磁盘。
+Image and ISO tools are prepared automatically.	映像和 ISO 工具会自动准备。
+Check your image, removal set and output before building.	生成前核对映像、移除项和输出位置。
+Output and workspace	输出和工作区
+Installation options	安装选项
+Selected removals and full recipe	已选移除项和完整配方
+Build-dependent settings	取决于构建方式的设置
+Save recipe	保存配方
+Load recipe	加载配方
+Build	构建
+The selected edition will be copied, modified, compressed and saved as a bootable ISO.	所选版本会被复制、修改、压缩，并保存为可引导 ISO。
+Waiting to start	等待开始
+No changes have been made.	尚未做任何更改。
+Overall progress	总进度
+Current operation	当前操作
+To stop, use Cancel safely at the top right. It stops at the next safe point. Your source is never changed; working files, saved progress and logs are kept.	要停止，请用右上角的“安全取消”。它会在下一个安全点停下。源文件不会被修改；工作文件、已保存进度和日志都会保留。
+ISO created	ISO 已生成
+Finished with warnings	已完成，但有警告
+Output ISO	输出 ISO
+SHA-256	SHA-256
+Open output folder	打开输出文件夹
+Open logs and report	打开日志和报告
+Test the ISO in a VM before installing Windows.	安装到真机前，先在虚拟机中测试这个 ISO。
+Operation history	操作记录
+0 of 7 stages done	0 / 7 个阶段已完成
+Expand a stage to see each step and any error details.	展开阶段可查看每一步和错误详情。
+Build details	构建详情
+Build log	构建日志
+Continue this build from the progress it saved.	从该构建已保存的进度继续。
+Start	开始
+Next	下一步
+Working	正在处理
+Selected	已选择
+Not selected	未选择
+Protected / potentially boot-critical	受保护 / 可能影响启动
+Application	应用程序
+Copilot apps	Copilot 应用
+Remove preinstalled Copilot apps. Keep shared runtimes and shell components.	移除预装的 Copilot 应用。保留共用运行库和外壳组件。
+New Outlook and Mail	新 Outlook 和邮件
+Remove Outlook and the retired Mail / Calendar apps.	移除 Outlook，以及已停用的邮件和日历应用。
+Teams	Teams
+Remove personal Teams clients.	移除个人版 Teams 客户端。
+Xbox and gaming overlays	Xbox 和游戏浮层
+Remove Xbox apps and Game Bar. Gaming sign-in and recording may be unavailable.	移除 Xbox 应用和游戏栏。游戏登录和录制可能不可用。
+News, weather and Bing apps	新闻、天气和 Bing 应用
+Remove packaged feed apps; local Windows Search is preserved.	移除信息流应用；本地 Windows 搜索会保留。
+Microsoft 365 promotions	Microsoft 365 推广
+Remove Office Hub and Office push-notification promotional apps.	移除 Office 中心和 Office 推送推广应用。
+Clipchamp	Clipchamp
+Remove the bundled video editor.	移除附带的视频编辑器。
+Solitaire	纸牌
+Remove bundled games.	移除附带的游戏。
+Phone Link and cross-device apps	手机链接和跨设备应用
+Remove phone integration apps. Cross-device features may stop working.	移除手机整合应用。跨设备功能可能失效。
+Feedback, tips and help	反馈、提示和帮助
+Remove Feedback Hub, Get Help, and introductory apps.	移除反馈中心、获取帮助和入门应用。
+Dev Home and Power Automate	Dev Home 和 Power Automate
+Remove Dev Home and Power Automate Desktop.	移除 Dev Home 和 Power Automate Desktop。
+People, To Do, Family and Skype	人脉、To Do、家庭和 Skype
+Remove optional organizer and communication apps.	移除可选的整理和通讯应用。
+Maps and Mixed Reality	地图和混合现实
+Remove retired Maps and Mixed Reality clients.	移除已停用的地图和混合现实客户端。
+Media Player and Movies	媒体播放器和电影
+Remove bundled media playback apps; codecs and shared frameworks remain.	移除附带的媒体播放应用；编解码器和共用框架会保留。
+Clock, Recorder and Sticky Notes	时钟、录音机和便签
+Remove optional personal utilities.	移除可选的个人工具。
+Quick Assist	快速助手
+Remove Microsoft's remote-assistance client.	移除微软远程协助客户端。
+Paint, 3D Viewer and OneNote	画图、3D 查看器和 OneNote
+Remove Paint, 3D Viewer and OneNote. Leave unchecked to keep them.	移除画图、3D 查看器和 OneNote。不勾选则保留。
+Camera	相机
+Remove the Camera app, not camera drivers.	移除相机应用，不移除相机驱动。
+Windows Terminal	Windows Terminal
+Remove Terminal. PowerShell and Command Prompt remain.	移除 Terminal。PowerShell 和命令提示符会保留。
+OEM promotional apps	OEM 推广应用
+Remove Intel management status and Dolby promotional applications, not drivers.	移除 Intel 管理状态和杜比推广应用，不移除驱动。
+Remove Edge and WebView2	移除 Edge 和 WebView2
+Delete Edge and WebView2 files. Apps that require WebView2 may stop working. Updates may reinstall Edge.	删除 Edge 和 WebView2 文件。依赖 WebView2 的应用可能无法运行。更新可能会重新安装 Edge。
+Remove OneDrive setup binaries	移除 OneDrive 安装程序
+Remove both architecture-specific OneDrive installers from the offline image.	从脱机映像中移除两种架构的 OneDrive 安装程序。
+Speech, OCR and handwriting payloads	语音、OCR 和手写识别文件
+Remove optional language capabilities in every image language; retain basic language support.	移除映像中各语言的可选语言功能包；保留基本语言支持。
+Retired accessories and wallpaper payloads	已停用的附件和壁纸文件
+Remove WordPad, Steps Recorder, Math Recognizer, legacy Media Player and extended wallpapers where installed.	在已安装时移除写字板、步骤记录器、数学识别器、旧版媒体播放器和扩展壁纸。
+XPS printing	XPS 打印
+Disable optional XPS printing and remove its payload.	禁用可选的 XPS 打印并移除其文件。
+Work Folders	工作文件夹
+Disable enterprise Work Folders sync and remove its payload.	禁用企业工作文件夹同步并移除其文件。
+Legacy Internet Explorer	旧版 Internet Explorer
+Disable the retired Internet Explorer optional feature where present.	在存在时禁用已停用的 Internet Explorer 可选功能。
+Recall optional feature	Recall 可选功能
+Disable and remove Recall's payload only if this image exposes it to DISM.	仅当该映像向 DISM 提供 Recall 时，禁用并移除其文件。
+Ads, recommendations and sponsored apps	广告、推荐和赞助应用
+Suppress consumer content, Settings suggestions, Explorer promotions and welcome tips.	抑制消费者内容、设置建议、资源管理器推广和欢迎提示。
+Optional diagnostics and personalization	可选诊断和个性化
+Keep required diagnostic data. Disable advertising ID, personalized suggestions and input collection.	保留必需的诊断数据。关闭广告 ID、个性化建议和输入收集。
+Disable Copilot and Recall	禁用 Copilot 和 Recall
+Apply policies to disable Copilot and Recall. Support varies by build and edition.	用策略禁用 Copilot 和 Recall。是否生效取决于版本和 SKU。
+Widgets and taskbar feeds	小组件和任务栏信息流
+Disable Widgets by policy and hide its taskbar entry.	用策略禁用小组件，并隐藏任务栏入口。
+Web search and search highlights	网页搜索和搜索亮点
+Turn off web suggestions, cloud search and dynamic search highlights; keep local search.	关闭网页建议、云搜索和动态搜索亮点；保留本地搜索。
+OneDrive sync and backup prompts	OneDrive 同步和备份提示
+Disable OneDrive sync by policy. OneDrive binaries are retained; use this only if you do not need sync.	用策略禁用 OneDrive 同步。程序文件会保留；不需要同步时才使用。
+Edge first-run and promotional UI	Edge 首次运行和推广界面
+Suppress first-run, sidebar and recommendations. Preserve Edge and WebView2 for app compatibility.	抑制首次运行、侧边栏和推荐。为了应用兼容性，保留 Edge 和 WebView2。
+Setup privacy and finish-setting-up nags	安装隐私和“完成设置”提示
+Suppress privacy setup and post-sign-in setup suggestions without creating accounts or accepting the EULA.	抑制隐私设置和登录后的设置建议，不创建账户，也不代为接受许可协议。
+Component cleanup	组件清理
+Regular mode preserves servicing. Core additionally resets the update base before its irreversible component pruning.	普通模式保留维护能力。Core 还会在不可逆地裁剪组件之前重置更新基线。
+Bypass setup hardware requirements	绕过安装硬件要求
+Set CPU, RAM, TPM, storage and Secure Boot bypass values in setup and Windows. Unsupported hardware may not work.	在安装程序和 Windows 中写入 CPU、内存、TPM、存储和安全启动的绕过值。不受支持的硬件仍可能无法使用。
+Disable reserved storage	禁用预留存储
+Stop reserving disk space for updates. This can leave less space available during servicing.	不再为更新预留磁盘空间。以后维护时可用空间会更少。
+Disable automatic device encryption	禁用自动设备加密
+Prevent automatic BitLocker device encryption; do not use if you require encryption by default.	阻止自动 BitLocker 设备加密；需要默认加密时不要使用。
+An operation is still running.	仍有操作在运行。
+It is being cancelled. Wait for it to stop before closing.	正在取消。请等它停止后再关闭。
+Inspect an image first.	请先检查映像。
+Select an edition before listing its components.	列出组件前请先选择版本。
+Protected components are included	其中包含受保护组件
+Build cancelled.	构建已取消。
+Your source was not changed. Working files and logs are kept.	源文件没有改动。工作文件和日志已保留。
+You can resume again.	可以再次继续。
+Resume cancelled.	继续构建已取消。
+Saved progress and logs are kept.	已保存的进度和日志会保留。
+Inspection cancelled.	检查已取消。
+The image was not changed.	映像没有被修改。
+Component list cancelled.	组件列表已取消。
+Download cancelled.	下载已取消。
+Partial downloads are kept, so you can continue later. No source media was modified.	未完成的下载会保留，稍后可以继续。没有修改源介质。
+Recovery cancelled.	清理已取消。
+Run Recover workspace again to finish cleaning up this job.	请再次运行“清理工作区”以完成这项作业的清理。
+Restart cancelled.	重新启动已取消。
+The app is still running without administrator privileges.	程序仍在没有管理员权限的情况下运行。
+Cancelled.	已取消。
+Nothing was changed.	没有做任何更改。
+Build failed.	构建失败。
+Saved progress can be resumed.	已保存的进度可以继续。
+Resume failed.	继续构建失败。
+Saved progress is kept, so you can resume again.	已保存的进度仍在，可以再次继续。
+The image could not be inspected.	无法检查该映像。
+The component list could not be loaded.	无法加载组件列表。
+The download did not complete.	下载没有完成。
+Recovery did not complete.	清理没有完成。
+The app could not restart as administrator.	程序无法以管理员身份重新启动。
+The operation did not complete.	操作没有完成。
+No further details were reported.	没有更多详情。
+Finished.	已完成。
+Complete	完成
+Done earlier	此前已完成
+In progress	进行中
+Done	完成
+Skipped	已跳过
+Failed	失败
+Cancelled	已取消
+Not run	未运行
+Windows high contrast is on, so colors follow your system settings.	Windows 高对比度已打开，颜色将跟随系统设置。
+Some cleanup steps reported problems:	部分清理步骤报告了问题：
+That is not a valid job file path.	这不是有效的作业文件路径。
+Choose the job.json file inside the build's tiny11-… folder.	请选择该构建 tiny11-… 文件夹里的 job.json。
+This job's saved recipe is missing, so it can't be resumed.	这个作业缺少已保存的配方，无法继续。
+This job's saved recipe could not be read.	无法读取这个作业已保存的配方。
+This build has no saved progress to resume. It was started before progress was saved, or it stopped before its image was saved,	这个构建没有可继续的进度。它在开始保存进度之前就启动了，或者在映像保存之前就停止了，
+Tiny11	Tiny11
+Tiny11 Core	Tiny11 Core
+Custom with Core removals	自定义（含 Core 移除项）
+Recovery ESD	恢复 ESD
+Maximum WIM	最大压缩 WIM
+Fast WIM	快速 WIM
+The removal choices from the original build stay as they were. They can't be changed when resuming.	原构建的移除选择保持不变。继续时不能修改。
+Core: no Windows Update, no Microsoft Defender, no recovery environment. Use only in an isolated test VM.	Core：没有 Windows 更新、没有 Microsoft Defender、没有恢复环境。只在隔离的测试虚拟机中使用。
+Individual removals include protected items. The image may not boot.	单个移除包含受保护项。映像可能无法启动。
+The saved progress is verified first. If anything does not match, nothing is changed.	会先校验已保存的进度。有任何不一致就不会做更改。
+Core and component-payload removals	Core 和组件文件移除
+Core removals	Core 移除项
+Legacy installer: automatic (needed for	旧版安装程序：自动（需要用于
+Output:	输出：
+Mode:	模式：
+Compression:	压缩：
+removal groups	个移除组
+individual actions	个单独操作
+No servicing, recovery or Defender.	没有维护、恢复或 Defender。
